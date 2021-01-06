@@ -2,3 +2,10 @@
 # defaults file for kibana-role
   kibana_version: "7.10.1"
   kibana_home: "/opt/kibana/{{ kibana_version }}"
+  
+  #{{ hostvars[inventory_hostname]['ansible_default_ipv4']['address'] }}" 
+
+  # IP-addresses
+  es_host_ip: "172.21.0.2"
+  kibana_host_ip: "172.21.0.3"
+  logstash_host_ip: "172.21.0.4"
