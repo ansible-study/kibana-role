@@ -3,6 +3,12 @@
   hosts: all
   gather_facts: true
   tasks:
+    - name: "Include java-role"
+      include_role:
+        name: "java-role"
+    # - name: "Include elastic-role"
+    #   include_role:
+    #     name: "elastic-role"
     - name: "Include kibana-role"
       include_role:
         name: "kibana-role"
